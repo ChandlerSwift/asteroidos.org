@@ -36,5 +36,6 @@ layout: documentation
 &gt; save_config
 # ip a show dev wlan0
 </code></pre>
+<p>If the <code>wpa_cli</code> commands fail, your device may be blocked by <a href="https://www.busybox.net/BusyBox.html#rfkill">rfkill</a>. To unblock your device, run <code>rfkill list</code>, find your device and run <code>rfkill unblock 1</code> with your device's id in place of 1.</p>
 <p>The watch should automatically get an IPv6 address from your network or you can set a static IPv4. You can disconnect from adb and connect via SSH.</p>
 <p>By default, there is no <code>root</code> or <code>ceres</code> password, and no firewall rules.</p>
